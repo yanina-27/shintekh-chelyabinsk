@@ -41,7 +41,32 @@
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00" data-message="Здравствуйте! Хочу записаться на шиномонтаж: {услуга}, {день} в {время}." onsubmit="return false">
       <h2 class="s-widget__title">Запись на шиномонтаж</h2>
       <fieldset><legend>Услуга</legend>
-        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Переобувка 4 колёс" data-price="1920" data-from="1" data-min="" checked><span>Переобувка 4 колёс</span><b>от 1 920 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Переобувка кроссовера или джипа" data-price="3040" data-from="1" data-min=""><span>Переобувка кроссовера или джипа</span><b>от 3 040 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Коммерческий транспорт (1 колесо)" data-price="870" data-from="" data-min=""><span>Коммерческий транспорт (1 колесо)</span><b>870 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Заправка кондиционера" data-price="2999" data-from="" data-min=""><span>Заправка кондиционера</span><b>2 999 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Ремонт боковых порезов и грыж" data-price="600" data-from="1" data-min=""><span>Ремонт боковых порезов и грыж</span><b>от 600 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Правка литого диска" data-price="1500" data-from="1" data-min=""><span>Правка литого диска</span><b>от 1 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="6" data-name="Прокатка штампованного диска" data-price="600" data-from="" data-min=""><span>Прокатка штампованного диска</span><b>600 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="7" data-name="Сварка аргоном литого диска" data-price="1000" data-from="1" data-min=""><span>Сварка аргоном литого диска</span><b>от 1 000 ₽</b></label></div>
+        <div class="s-chips s-chips--col">
+          <div class="s-svcgroup" data-svcgroup data-open>
+          <button type="button" class="s-chip s-chip--row s-svcgroup__head" data-svchead><span>Переобувка 4 колёс</span><b>от 1 920 ₽</b></button>
+          <div class="s-chips s-svcgroup__sub">
+          <label class="s-chip"><input type="radio" name="svc" value="0" data-name="Переобувка 4 колёс, R12–R14" data-price="1920" checked><span>R12–R14<small class="s-chip__p"> 1920 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="1" data-name="Переобувка 4 колёс, R15" data-price="2120"><span>R15<small class="s-chip__p"> 2120 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="2" data-name="Переобувка 4 колёс, R16" data-price="2480"><span>R16<small class="s-chip__p"> 2480 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="3" data-name="Переобувка 4 колёс, R17" data-price="2680"><span>R17<small class="s-chip__p"> 2680 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="4" data-name="Переобувка 4 колёс, R18–R19" data-price="3040"><span>R18–R19<small class="s-chip__p"> 3040 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="5" data-name="Переобувка 4 колёс, R20–R23" data-price="3400"><span>R20–R23<small class="s-chip__p"> 3400 ₽</small></span></label>
+          </div></div>
+          <div class="s-svcgroup" data-svcgroup>
+          <button type="button" class="s-chip s-chip--row s-svcgroup__head" data-svchead><span>Кроссоверы и джипы</span><b>от 3 040 ₽</b></button>
+          <div class="s-chips s-svcgroup__sub">
+          <label class="s-chip"><input type="radio" name="svc" value="6" data-name="Кроссовер или джип (малый)" data-price="3040"><span>Малый<small class="s-chip__p"> 3040 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="7" data-name="Кроссовер или джип (средний)" data-price="3480"><span>Средний<small class="s-chip__p"> 3480 ₽</small></span></label>
+          <label class="s-chip"><input type="radio" name="svc" value="8" data-name="Кроссовер или джип (большой)" data-price="3640"><span>Большой<small class="s-chip__p"> 3640 ₽</small></span></label>
+          </div></div>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="9" data-name="Джип от R20 и выше (грязевая резина)" data-price="4160"><span>Джип от R20 и выше (грязевая резина)</span><b>4 160 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="10" data-name="Коммерческий транспорт (1 колесо)" data-price="870"><span>Коммерческий транспорт (1 колесо)</span><b>870 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="11" data-name="Заправка кондиционера" data-price="2999"><span>Заправка кондиционера</span><b>2 999 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="12" data-name="Ремонт боковых порезов и грыж" data-price="600" data-from="1"><span>Ремонт боковых порезов и грыж</span><b>от 600 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="13" data-name="Правка литого диска" data-price="1500" data-from="1"><span>Правка литого диска</span><b>от 1 500 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="14" data-name="Прокатка штампованного диска" data-price="600"><span>Прокатка штампованного диска</span><b>600 ₽</b></label>
+          <label class="s-chip s-chip--row"><input type="radio" name="svc" value="15" data-name="Сварка аргоном литого диска" data-price="1000" data-from="1"><span>Сварка аргоном литого диска</span><b>от 1 000 ₽</b></label>
+          </div>
       </fieldset>
       <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
       <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
@@ -177,6 +202,28 @@
 </main>
 <footer class="s-foot"><p>ШинТех · Челябинск</p><p>Шиномонтаж, заправка автокондиционеров, вулканизация, правка и сварка дисков, выкуп шин и дисков</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться</a><a class="s-btn s-btn--ghost" href="tel:+79995705748">Позвонить</a></nav>
+<script>
+(() => {
+  const groups = document.querySelectorAll("[data-svcgroup]");
+  groups.forEach((g) => {
+    const head = g.querySelector("[data-svchead]");
+    head.addEventListener("click", () => {
+      const wasOpen = g.hasAttribute("data-open");
+      groups.forEach((x) => x.removeAttribute("data-open"));
+      if (!wasOpen) {
+        g.setAttribute("data-open", "");
+        const first = g.querySelector("input[name=svc]");
+        if (first) { first.checked = true; first.dispatchEvent(new Event("change", { bubbles: true })); }
+      }
+    });
+  });
+  const form = document.querySelector("[data-s-booking]");
+  form.addEventListener("change", (e) => {
+    if (e.target.name !== "svc") return;
+    groups.forEach((g) => { if (!g.contains(e.target)) g.removeAttribute("data-open"); });
+  });
+})();
+</script>
 <script src="style.js" defer></script>
 </body>
 </html>
